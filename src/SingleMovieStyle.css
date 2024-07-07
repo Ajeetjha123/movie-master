@@ -1,0 +1,72 @@
+.loading {
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Styling for the movie section */
+.movie-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400%;
+  padding: 20px;
+}
+
+/* Styling for the movie card */
+.movie-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 90%;
+  max-width: 500px;
+  margin: 20px;
+}
+
+/* Styling for the image */
+.movie-card figure {
+  margin: 0;
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Styling for the card content */
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-content .title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-content .card-text {
+  font-size: 1rem;
+  color: #666;
+  margin: 5px 0;
+}
+
+/* Styling for the back button */
+.back-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #0056b3;
+}
