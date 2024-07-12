@@ -1,13 +1,24 @@
 import "./App.css";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import Home from "./Home";
-import SingleMoive from "./SingleMoive";
+import AuthForm from "./auth/AuthForm";
+import { useAuth } from "./store/auth-context";
+import SingleMovie from "./SingleMovie.jsx";
+
 const App = () => {
+  const authCtx = useAuth();
+  const isLoggedIn = authCtx.isLoggedIn;
+
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/movie/:id" element={<SingleMoive />} />
+      {isLoggedIn ? (
+        <Route path="/home" element={<Home />} />
+      ) : (
+        <Route path="/" element={<AuthForm />} />
+      )}
+      <Route path="/home/movie/:id" element={<SingleMovie />} />
     </Routes>
   );
 };
+
 export default App;
