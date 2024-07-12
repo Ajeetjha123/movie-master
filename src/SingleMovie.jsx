@@ -51,7 +51,7 @@ const SingleMovie = () => {
           <p className="card-text">{movie.Genre}</p>
           <p className="card-text">{movie.imdbRating} / 10</p>
           <p className="card-text">{movie.Country}</p>
-          <NavLink to="/" className="back-btn">
+          <NavLink to="/home" className="back-btn">
             Go Back
           </NavLink>
         </div>

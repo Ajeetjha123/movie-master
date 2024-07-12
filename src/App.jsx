@@ -17,6 +17,7 @@ const App = () => {
         <Route path="/" element={<AuthForm />} />
       )}
       <Route path="/home/movie/:id" element={<SingleMovie />} />
+      <Route path="*" element={<AuthForm />} />
     </Routes>
   );
 };
